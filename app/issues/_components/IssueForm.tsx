@@ -16,10 +16,6 @@ import { z } from "zod";
 
 type IssueFormData = z.infer<typeof createIssueSchema>;
 
-interface Props {
-  issue?: Issue;
-}
-
 const IssueForm = ({ issue }: { issue?: Issue }) => {
   const router = useRouter();
   const {
